@@ -1,0 +1,22 @@
+my-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea {
+  width: 400px;
+  padding: 4px 6px;
+  margin-bottom: 14px;
+
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  background: inherit;
+  color: inherit;
+}
