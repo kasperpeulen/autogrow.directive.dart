@@ -66,6 +66,7 @@ void coverage() {
 
 @Task()
 updateDemo() async {
-  Pub.global.run('peanut');
-  await runGit(['push', 'origin', 'gh-pages']);
+  // disable for now, see https://github.com/dart-lang/pub/issues/1376
+  // Pub.global.run('peanut', arguments: ['--directory', 'example']);
+  // await runGit(['push', 'origin', 'gh-pages']);
 }
