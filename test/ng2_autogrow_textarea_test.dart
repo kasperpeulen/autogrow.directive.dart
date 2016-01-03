@@ -5,8 +5,8 @@ import 'dart:html';
 
 import 'package:angular2/angular2.dart';
 import 'package:angular2_testing/angular2_testing.dart';
-import 'package:ng2_autogrow/autogrow.directive.dart';
 import 'package:test/test.dart';
+import 'package:ng2_autogrow_textarea/ng2_autogrow_textarea.dart';
 
 @Component(
     selector: 'test-cmp',

@@ -1,6 +1,6 @@
 import 'package:angular2/angular2.dart';
 import 'package:angular2/bootstrap.dart';
-import 'package:ng2_autogrow/autogrow.directive.dart';
+import 'package:ng2_autogrow_textarea/ng2_autogrow_textarea.dart';
 
 void main() {
   bootstrap(AppComponent);
