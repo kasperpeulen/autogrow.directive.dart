@@ -64,6 +64,7 @@ void coverage() {
   }
 }
 
+@Task()
 updateDemo() async {
   Pub.global.run('peanut');
   await runGit(['push', 'origin', 'gh-pages']);
