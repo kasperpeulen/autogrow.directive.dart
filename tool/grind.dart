@@ -8,7 +8,7 @@ void main(List<String> args) {
 }
 
 @DefaultTask()
-@Depends(analyze, format, testTravis, coverage)
+@Depends(analyze, format, testTravis, coverage, updateDemo)
 void prePush() {}
 
 @Task()
@@ -64,7 +64,7 @@ void coverage() {
   }
 }
 
-void updateDemo() async {
+updateDemo() async {
   Pub.global.run('peanut');
-  runGit(['push', 'origin', 'gh-pages']);
+  await runGit(['push', 'origin', 'gh-pages']);
 }
