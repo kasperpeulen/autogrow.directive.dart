@@ -2,7 +2,7 @@ name: ng2_autogrow_textarea
 description: Autogrow textarea directive for Angular 2 Dart.
 author: Kasper Peulen <kasperpeulen@gmail.com>
 homepage: https://github.com/kasperpeulen/autogrow.directive.dart
-version: 0.0.1
+version: 0.0.1+1
 environment:
   sdk: '>=1.13.0 <2.0.0'
 dependencies:
@@ -15,3 +15,7 @@ dev_dependencies:
   dart_style: '^0.2.1'
   browser: '^0.10.0+2'
   git: '^0.4.4+2'
+transformers:
+- angular2:
+    entry_points:
+    - example/main.dart
