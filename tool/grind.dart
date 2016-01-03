@@ -8,11 +8,11 @@ void main(List<String> args) {
 }
 
 @DefaultTask()
-@Depends(analyze, format, testTravis, coverage, updateDemo)
+@Depends(analyze, format, test, coverage, updateDemo)
 void prePush() {}
 
 @Task()
-@Depends(analyze, testFormat, test)
+@Depends(analyze, testFormat, testTravis)
 void travis() {}
 
 @Task()
